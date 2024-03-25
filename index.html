@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reals</title>
+  <link rel="stylesheet" href="homepage.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="Maincontainer">
+    <div class="logo">
+      <i class="fa-solid fa-circle-play fa-xl"></i>
+      <font>Llo Reels</font>
+    </div>
+    <header>
+      <div class="searchbar">
+        <div class="inputcon">
+          <input type="text" id="searchval">
+          <button class="sicon" onclick="search()">
+            <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+          </button>
+        </div>
+      </div>
+      <div class="profile">
+        <div id="profl">A</div>&nbsp;
+        <p id="usernameDisplay">Adelante</p>
+      </div>
+    </header>
+    <aside>
+      <div id="home-container">
+        <i class="fa-solid fa-house fa-xl"></i>
+        <span>HOME</span>
+      </div>
+      <div class="category-container" onclick="open_category()">
+        <i class="fa-solid fa-list fa-xl"></i>
+        <span>CATEGORY</span>
+      </div>
+      <div id="category-option" style="box-shadow: 0 0 0 transparent;">
+        <button id="anime-button" onclick="display_videos('ANIME');" style="
+        transform: translateX(-100%);">•&nbsp; ANIME</button>
+        <button id="adventure-button" onclick="display_videos('ADVENTURE');" style="
+        transform: translateX(-200%);">•&nbsp; ADVENTURE</button>
+        <button id="sport-button" onclick="display_videos('SPORTS');" style="
+        transform: translateX(-300%);">•&nbsp; SPORTS</button>
+      </div>
+    </aside>
+    <main>
+      <br>
+      <div class="video-area" id="va0">
+
+      <div class="video-container">
+
+        <div class="video-top-container"><div id="video-owner-profile" style="background-color: red;">P</div><div id="video-caption"><span>Pantaleon</span><br><br>sayaw bay</div></div>
+        
+        <div class="video-bottom-container">
+          <video loop src="Videos/vid2.mp4"></video>
+          <div class="video-buttons-container">
+            <button onclick="like(0)"><div class="button-circle-bg"><img id="video0-like-img" src="Icons/heart-solid.svg"></div><span id="video0-likes">999</span></button><button onclick="comment(0)"><div class="button-circle-bg"><img src="Icons/comment-solid.svg"></div><span id="video0-comments">0</span></button><button onclick="share(0)"><div class="button-circle-bg"><img src="Icons/share-solid.svg"></div><span id="video0-shares">0</span></button><br>
+          </div>
+        </div>
+      </div>
+
+      <div class="comments-container" id="cc0">
+        <div class="comment-area">
+          <div class="cctitle">Comments</div>
+          <div class="comments">
+            <div class="comment-owner">A</div>
+            <div class="comment">
+              <span class="comment-name">Alizandra</span>
+              Lorem ipsum dolor sit amet consectetur
+            </div>
+          </div>
+        </div>
+        <div class="to-comment">
+          <div class="add-comment">
+            <input class="comment-input" type="text" placeholder="Add comment...">
+            <button class="comment-send" >
+              <img src="Icons/arrow-left-long-solid.svg">
+            </button>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+      <br>
+    </main>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
